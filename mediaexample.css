@@ -1,0 +1,71 @@
+body{
+    margin:0;
+    /* padding: 0%; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* for mobile view:: */
+
+nav{
+    display: flex;/*row wise teeno child*/
+    justify-content: space-between;
+    align-items: center; /*vertical center*/
+    background-color: rgb(5, 183, 124);
+    padding: 1rem; /* root elemnet ke comaprison*/
+    /* 1rem : parent ke equivalent root ke same to same */
+}
+
+.logo{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu{
+    display: none;
+    /* shoe nhi karega */
+    flex-direction: column;
+    /* desktop view coln wise */
+    background: #444;
+    position: absolute;
+    /* position: top r or bl or br  */
+    top: 60px;
+    right: 20px;
+    width: 200px;
+}
+
+.menu a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    /* to remove underline of anchor tag */
+    display: block;
+    /* dikhega ye show */
+}
+
+.hamburger{
+    font-size: 2rem;
+    color: violet;
+    cursor: pointer;/* pointer on hover : arrow converted to finger */
+}
+
+/* medaiqueries */
+/*break point on tab and desktop view */
+@media(min-width:768px){
+    .menu{
+        display: flex;
+        position: static;
+        flex-direction: row;/* to change default css for desktop */
+        background: none;
+        /* ye menu tag apna bg color show akre over black naviagtion bar : so i used none */
+        width: auto;
+        /* complete space */
+    }
+/* 
+    .menu a{
+        padding: 0 1rem;
+    } */
+
+    .hamburger{
+        display: none;
+        /* hide hamburger on desktop view*/
+    }}
