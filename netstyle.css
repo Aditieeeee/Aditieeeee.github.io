@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.main{
+    height: 50vh;   /* HALF PAGE */
+    background-image: 
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://assets.nflxext.com/ffe/siteui/vlv3/72c30cfd-1f2a-4d75-9bcb-16c5b6f03d6c/0e8a5b5e-5d0e-4d5e-b5a4-3c5e5fcd8d80/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.sign{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.content{
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 20px;
+}
+
+.content h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.content h2{
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.content p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.email-box{
+    margin-top: 20px;
+}
+
+.email-box input{
+    padding: 15px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+}
+
+.email-box button{
+    padding: 15px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
