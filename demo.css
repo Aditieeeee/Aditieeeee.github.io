@@ -39,12 +39,6 @@ body {
 }
 
 /* HERO */
-/* .hero {
-  height: 100vh;
-  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/6a0c90b1/background.jpg") center/cover no-repeat;
-  position: relative;
-} */
-
 .hero {
   height: 100vh;
   background:
@@ -57,20 +51,11 @@ body {
     url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xl.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
 }
 
 .hero-text {
-  position: relative;
   text-align: center;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   max-width: 800px;
@@ -104,7 +89,6 @@ body {
   background: #e50914;
   border: none;
   color: white;
-  cursor: pointer;
 }
 
 /* TRENDING */
@@ -116,7 +100,6 @@ body {
   display: flex;
   gap: 25px;
   overflow-x: auto;
-  scroll-behavior: smooth;
 }
 
 .slider::-webkit-scrollbar {
@@ -136,15 +119,17 @@ body {
   object-fit: cover;
 }
 
+/* ✅ NUMBER ON TOP OF IMAGE */
 .item span {
   position: absolute;
-  left: -25px;
-  bottom: 10px;
-  font-size: 100px;
-  font-weight: bold;
+  left: 10px;
+  bottom: 5px;
+  font-size: 90px;
+  font-weight: 900;
+  color: transparent;
   -webkit-text-stroke: 3px white;
-  color: black;
-  z-index: -1;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .item:hover {
@@ -152,7 +137,7 @@ body {
   z-index: 10;
 }
 
-/* MORE REASONS */
+/* REASONS */
 .reasons {
   padding: 60px;
 }
@@ -189,7 +174,7 @@ body {
 .cols {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 ul {
@@ -200,24 +185,11 @@ li {
   margin-bottom: 10px;
 }
 
-/*  MOBILE RESPONSIVE */
-
+/* MOBILE */
 @media (max-width: 480px) {
-
-  .header {
-    padding: 15px 20px;
-  }
-
-  .logo {
-    width: 100px;
-  }
 
   .hero-text h1 {
     font-size: 1.8rem;
-  }
-
-  .hero-text h2 {
-    font-size: 1rem;
   }
 
   .email {
@@ -229,10 +201,6 @@ li {
     width: 100%;
   }
 
-  .trending {
-    padding: 30px 20px;
-  }
-
   .item img {
     width: 140px;
     height: 210px;
@@ -240,40 +208,18 @@ li {
 
   .item span {
     font-size: 70px;
-    left: -18px;
   }
 
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
+  .cards,
   .cols {
     grid-template-columns: 1fr;
   }
 }
 
-
-/* 📱 TABLET RESPONSIVE */
-
-
+/* TABLET */
 @media (max-width: 768px) {
 
-  .header {
-    padding: 20px 30px;
-  }
-
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
-  .email input {
-    width: 70%;
-  }
-
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .cards,
   .cols {
     grid-template-columns: repeat(2, 1fr);
   }
